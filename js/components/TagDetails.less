@@ -1,0 +1,39 @@
+.tag_details {
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;  
+	-o-transition: all 100ms ease-out; 
+	transition: all 100ms ease-out; 
+	width: 100%;
+
+	h2 {
+		margin-bottom: 1.5em;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 1.5em
+	}
+
+	.positive {
+		color:#55B94E;
+	}
+
+	.negative {
+		color:#DD5C5C;
+	}
+	
+	.neutral {
+		color:#888;
+	}
+
+	&.show {
+		margin-left: 10px;
+		opacity: 1;
+	}
+
+	&.hide {
+		margin-left: 0;
+		opacity: 0;
+	}	
+}
+

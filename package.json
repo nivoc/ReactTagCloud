@@ -1,0 +1,68 @@
+{
+  "name": "react-webpack",
+  "version": "0.0.1",
+  "description": "downtime",
+  "main": "js/main.js",
+  "dependencies": {
+    "css-loader": "^0.9.0",
+    "es6-promise": "^2.0.1",
+    "firebase": "^2.0.6",
+    "flux": "^2.0.1",
+    "install": "^0.1.7",
+    "keymirror": "^0.1.0",
+    "less": "^1.7.5",
+    "less-loader": "^0.7.7",
+    "lodash": "^2.4.1",
+    "md5": "^1.0.0",
+    "npm": "^2.1.9",
+    "object-assign": "^2.0.0",
+    "react": "*",
+    "react-router": "^0.11.6",
+    "react-tools": "*",
+    "style-loader": "^0.8.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-exec": "^0.4.6",
+    "jest-cli": "^0.2.2",
+    "jsx-loader": "^0.12.2",
+    "react-hot-loader": "^1.1.0",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/test/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testPathIgnorePatterns": ["/node_modules/", "/helper/"]
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "node node_modules/webpack/bin/webpack --optimize-dedupe --progress --profile --colors --config webpack-production.config.js",
+    "test": "node node_modules/jest-cli/bin/jest js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO.git"
+  },
+  "eslintConfig": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "env": {
+      "amd": true,
+      "browser": true,
+      "jasmine": true
+    },
+    "rules": {
+      "quotes": 0,
+      "strict": 0,
+      "no-underscore-dangle": false
+    },
+    "globals": {
+      "module": true,
+      "jest": true
+    }
+  }
+}
