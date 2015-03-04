@@ -12,10 +12,10 @@ npm start
 ```
 Accessible at `http://localhost:3001/`
 
-_Hint:_ `npm start` is booting a local dev server with hot code replacement enabled. **Try it!**: If you modify a component lets say 'TagCloudTopic' and hit save, the change will be hot-replaced in the browser. No reload required! This works currently with all stateless components basically everything thats inside the components folder incl. CSS.
+_Hint:_ `npm start` is booting a local dev server with hot code replacement enabled. **Try it!**: If you modify a component lets say 'TagCloudTopic' and hit save, the change will be hot-replaced in the browser. No reload required! This works currently with all stateless components basically everything thats inside the components folder (js&css).
 
 # Test
-`npm test` :-)
+`npm test`
 
 # Minified Build
 ```
